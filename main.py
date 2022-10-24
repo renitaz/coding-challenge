@@ -96,6 +96,7 @@ def main():
 def sendEmail(subject, msg):
     context = ssl.create_default_context()
     sender = "renita.coding.test@gmail.com"
+    # Update recipient with coding challenge alert email 
     recipient = "renita.coding.test@gmail.com"
     gmail_app_password = "rlvcobgrvezsjnoj"
     # formatted message this way to update Subject line in gmail 
@@ -119,4 +120,5 @@ def sendEmail(subject, msg):
 if __name__=="__main__": 
     # for i in range(60): 
     #     main()
+    #     time.sleep(60)
     main()
